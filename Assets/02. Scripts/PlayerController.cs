@@ -2,9 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using UnityEngine.UI;
-using System;
-using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
@@ -22,72 +19,47 @@ public class PlayerController : MonoBehaviour
     public GameObject[] square;
     public GameObject blow;
     public GameObject GameOverScreen;
-    public GameObject ClearScreen;
     public GameObject Squares;
 
     [Header("Audio")]
     public AudioSource BGM;
 
-    [Header("UI")]
-    [SerializeField] Text percent;
-
-    [SerializeField] private float endTime;
-    [SerializeField] private float startTime;
-
-    Rigidbody rigid;
-
-    [SerializeField] Animator anim;
-
     private void Start()
     {
         BGM = gameObject.GetComponent<AudioSource>();
-        rigid = gameObject.GetComponent<Rigidbody>();
-        StartCoroutine(End());
-        StartCoroutine(StartSong());
-    }
-
-    private IEnumerator StartSong()
-    {
-        yield return new WaitForSeconds(startTime);
         BGM.Play();
-        yield break;
+        StartCoroutine(End());
     }
-
+   
     private IEnumerator End()
     {
-        yield return new WaitForSeconds(endTime); //노래가 끝나는 초
-        anim.SetTrigger("End");
+        yield return new WaitForSeconds(180f); //노래가 끝나는 초
         canMove = false;
-        percent.gameObject.SetActive(false);
-        ClearScreen.SetActive(true);
     }
 
     private void Update()
     {
         transform.Translate(Vector3.forward * playerSpeed * Time.deltaTime);
 
-        if (Input.GetMouseButtonDown(0) && canMove == true)
+        if (Input.GetKeyDown(KeyCode.Space) && canMove == true || Input.GetMouseButtonDown(0) && canMove == true)
         {
-            if (!EventSystem.current.IsPointerOverGameObject())
+            if (angle1 == true)
             {
-                if (angle1 == true)
-                {
-                    transform.localEulerAngles = new Vector3(0, 45, 0);
-                    angle1 = false;
-                    angle2 = true;
-                }
-                else if (angle2 == true)
-                {
-                    transform.localEulerAngles = new Vector3(0, -45, 0);
-                    angle1 = true;
-                    angle2 = false;
-                }
+                transform.localEulerAngles = new Vector3(0, 45, 0);
+                angle1 = false;
+                angle2 = true;
+            }
+            else if (angle2 == true)
+            {
+                transform.localEulerAngles = new Vector3(0, -45, 0);
+                angle1 = true;
+                angle2 = false;
             }
         }
 
         if (isDestroy == true)
         {
-            if (Input.GetMouseButtonDown(0) && canMove == true)
+            if (Input.GetKeyDown(KeyCode.Space) && canMove == true || Input.GetMouseButtonDown(0) && canMove == true)
             {
                 StartCoroutine(Destroy());
                 isDestroy = false;
@@ -95,28 +67,14 @@ public class PlayerController : MonoBehaviour
         }
         else if (isDestroy == false)
         {
-            if (Input.GetMouseButtonDown(0) && canMove == true)
+            if (Input.GetKeyDown(KeyCode.Space) && canMove == true || Input.GetMouseButtonDown(0) && canMove == true)
             {
-                rigid.useGravity = true;
-                Invoke("DestroyPlayer", 1f);
+                //DD();
+                //Squares.SetActive(false);
+                //GameOverScreen.SetActive(true);
+                //gameObject.SetActive(false);
             }
         }
-    }
-
-    public void DestroyPlayer()
-    {
-        DD();
-        percent.gameObject.SetActive(false);
-        Invoke("MovePercent", 1.215f);
-        GameOverScreen.SetActive(true);
-        gameObject.SetActive(false);
-    }
-
-    void MovePercent()
-    {
-        percent.gameObject.SetActive(true);
-        percent.fontSize = 115;
-        percent.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 42);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -133,22 +91,17 @@ public class PlayerController : MonoBehaviour
         {
             if (isDestroy == true)
             {
-                rigid.useGravity = true;
-                Invoke("DestroyPlayer", 1f);
+                //DD();
+                //Squares.SetActive(false);
+                //GameOverScreen.SetActive(true);
+                //Destroy(this.gameObject);
             }
         }
     }
 
     public void DD()
     {
-        try
-        {
-            GameObject.Find("Percent").GetComponent<Percentage>().Over_Loading();
-        }
-        catch (NullReferenceException)
-        {
-
-        }
+        GameObject.Find("Percent").GetComponent<Percentage>().Over_Loading();
     }
 
     private IEnumerator Destroy()
