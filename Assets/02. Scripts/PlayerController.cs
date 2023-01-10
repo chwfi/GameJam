@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         BGM.Play();
         StartCoroutine(End());
     }
-
+   
     private IEnumerator End()
     {
         yield return new WaitForSeconds(180f); //노래가 끝나는 초
@@ -69,10 +69,10 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && canMove == true || Input.GetMouseButtonDown(0) && canMove == true)
             {
-                DD();
-                Squares.SetActive(false);
-                GameOverScreen.SetActive(true);
-                gameObject.SetActive(false);
+                //DD();
+                //Squares.SetActive(false);
+                //GameOverScreen.SetActive(true);
+                //gameObject.SetActive(false);
             }
         }
     }
@@ -91,10 +91,10 @@ public class PlayerController : MonoBehaviour
         {
             if (isDestroy == true)
             {
-                DD();
-                Squares.SetActive(false);
-                GameOverScreen.SetActive(true);
-                Destroy(this.gameObject);
+                //DD();
+                //Squares.SetActive(false);
+                //GameOverScreen.SetActive(true);
+                //Destroy(this.gameObject);
             }
         }
     }
