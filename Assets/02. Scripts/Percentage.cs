@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Percentage : MonoBehaviour
 {
     public Text text_Loading;
-    private float time_loading = 70f; //¸Ê ½Ã°£
+    [SerializeField] float time_loading = 70f; //¸Ê ½Ã°£
     private float time_current;
     private float time_start;
     private bool isEnded = true;

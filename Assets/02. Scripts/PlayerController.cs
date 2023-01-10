@@ -24,16 +24,26 @@ public class PlayerController : MonoBehaviour
     [Header("Audio")]
     public AudioSource BGM;
 
+    [SerializeField] private float endTime;
+    [SerializeField] private float startTime;
+
     private void Start()
     {
         BGM = gameObject.GetComponent<AudioSource>();
-        BGM.Play();
         StartCoroutine(End());
+        StartCoroutine(StartSong());
+    }
+
+    private IEnumerator StartSong()
+    {
+        yield return new WaitForSeconds(startTime);
+        BGM.Play();
+        yield break;
     }
 
     private IEnumerator End()
     {
-        yield return new WaitForSeconds(180f); //노래가 끝나는 초
+        yield return new WaitForSeconds(endTime); //노래가 끝나는 초
         canMove = false;
     }
 
@@ -69,10 +79,10 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && canMove == true || Input.GetMouseButtonDown(0) && canMove == true)
             {
-                DD();
+                /*DD();
                 Squares.SetActive(false);
                 GameOverScreen.SetActive(true);
-                gameObject.SetActive(false);
+                gameObject.SetActive(false);*/
             }
         }
     }
@@ -91,10 +101,10 @@ public class PlayerController : MonoBehaviour
         {
             if (isDestroy == true)
             {
-                DD();
+                /*DD();
                 Squares.SetActive(false);
                 GameOverScreen.SetActive(true);
-                Destroy(this.gameObject);
+                Destroy(this.gameObject);*/
             }
         }
     }
