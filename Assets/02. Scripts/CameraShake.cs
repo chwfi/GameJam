@@ -10,9 +10,6 @@ public class CameraShake : MonoBehaviour
     public float ShakeAmplitude;
     public float ShakeFrequency;
 
-    [SerializeField] private float hiliteTime;
-    [SerializeField] private float hiliteEndTime;
-
     bool canShake = false;
 
     private float ShakeElapsedTime = 0f;
@@ -31,9 +28,9 @@ public class CameraShake : MonoBehaviour
 
     IEnumerator CameraShakeFirst()
     {
-        yield return new WaitForSeconds(hiliteTime);
+        yield return new WaitForSeconds(78.7f);
         canShake = true;
-        yield return new WaitForSeconds(hiliteEndTime);
+        yield return new WaitForSeconds(23f);
         canShake = false;
     }
 
@@ -57,8 +54,8 @@ public class CameraShake : MonoBehaviour
 
         if (canShake)
         {
-            ShakeAmplitude = 1.2f;
-            ShakeFrequency = 1.5f;
+            ShakeAmplitude = 2f;
+            ShakeFrequency = 2.5f;
             ShakeElapsedTime = ShakeDuration;
         }
     }
