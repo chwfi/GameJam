@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Blow : MonoBehaviour
 {
@@ -21,9 +22,12 @@ public class Blow : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && canBlow == true || Input.GetMouseButtonDown(0) && canBlow == true)
+        if (Input.GetMouseButtonDown(0) && canBlow == true)
         {
-            anim.SetTrigger("Blow");
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                anim.SetTrigger("Blow");
+            }
         }
     }
 }
