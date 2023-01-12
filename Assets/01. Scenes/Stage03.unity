@@ -3634,7 +3634,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 1789196815}
   m_Follow: {fileID: 1789196815}
   m_Lens:
-    FieldOfView: 40
+    FieldOfView: 50
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -9443,7 +9443,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 40
+  field of view: 50
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -21853,6 +21853,14 @@ PrefabInstance:
     - target: {fileID: 7047429057455167340, guid: 119f348832506534db1862d1dc2dbbce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047429057800925228, guid: 119f348832506534db1862d1dc2dbbce, type: 3}
+      propertyPath: m_Text
+      value: FireFly
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047429058145763771, guid: 119f348832506534db1862d1dc2dbbce, type: 3}
+      propertyPath: m_Text
+      value: Jim Yosef
       objectReference: {fileID: 0}
     - target: {fileID: 7047429058642337820, guid: 119f348832506534db1862d1dc2dbbce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
