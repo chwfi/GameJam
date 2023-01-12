@@ -32,8 +32,28 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void MenuToGameStage01()
+    public void MoveStage01()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void MoveStage02()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void MoveStage03()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void MoveStage04()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void MoveStage05()
+    {
+        SceneManager.LoadScene(4);
     }
 }
