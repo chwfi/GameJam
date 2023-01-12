@@ -365,6 +365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887d4f5e95a92a044832cf9de1970614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settingPanel: {fileID: 0}
+  soundManager: {fileID: 0}
 --- !u!4 &291266939
 Transform:
   m_ObjectHideFlags: 0
@@ -442,7 +444,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361280714}
-  m_LocalRotation: {x: 0.31439322, y: -0.012487309, z: 0.0041360287, w: 0.9492017}
+  m_LocalRotation: {x: 0.31439325, y: -0.012487351, z: 0.004136042, w: 0.9492017}
   m_LocalPosition: {x: 0.14142141, y: 4, z: -5.374011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -987,7 +989,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.31439322, y: -0.012487309, z: 0.0041360287, w: 0.9492017}
+  m_LocalRotation: {x: 0.31439325, y: -0.012487351, z: 0.004136042, w: 0.9492017}
   m_LocalPosition: {x: 0.14142141, y: 4, z: -5.374011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6382,11 +6384,13 @@ MonoBehaviour:
   square: []
   blow: {fileID: 0}
   GameOverScreen: {fileID: 111323894}
+  ClearScreen: {fileID: 0}
   Squares: {fileID: 595073560}
   BGM: {fileID: 1789196817}
+  percent: {fileID: 1900829349}
   endTime: 100
   startTime: 0
-  percent: {fileID: 1900829349}
+  anim: {fileID: 0}
   neareastEnemy: {fileID: 0}
 --- !u!82 &1789196817
 AudioSource:
@@ -6493,7 +6497,7 @@ Rigidbody:
   m_GameObject: {fileID: 1789196811}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 3.35
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
