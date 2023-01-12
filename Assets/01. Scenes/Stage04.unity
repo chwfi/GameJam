@@ -11869,7 +11869,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 0}
+  m_BackGroundColor: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -24648,10 +24648,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ClickRestart
       objectReference: {fileID: 0}
-    - target: {fileID: 6532765440675855281, guid: 119f348832506534db1862d1dc2dbbce, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7047429057371490685, guid: 119f348832506534db1862d1dc2dbbce, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -24747,14 +24743,6 @@ PrefabInstance:
     - target: {fileID: 7047429057455167340, guid: 119f348832506534db1862d1dc2dbbce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7047429057800925228, guid: 119f348832506534db1862d1dc2dbbce, type: 3}
-      propertyPath: m_Text
-      value: Symbolism
-      objectReference: {fileID: 0}
-    - target: {fileID: 7047429058145763771, guid: 119f348832506534db1862d1dc2dbbce, type: 3}
-      propertyPath: m_Text
-      value: Electro Light
       objectReference: {fileID: 0}
     - target: {fileID: 7047429058642337820, guid: 119f348832506534db1862d1dc2dbbce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
