@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/01. Scenes/Start.unity.meta
-guid: 9f30329e76fee2645ab195432b83c5d9
+<<<<<<<< HEAD:Assets/01. Scenes/Scene01.meta
+guid: 3b1cff96c1d7323459e6f47e770dcb2b
+folderAsset: yes
 DefaultImporter:
 ========
 guid: 5f4c38476465b724ea393894c782742e
 NativeFormatImporter:
->>>>>>>> fa280b0 (다함ㅋ):Assets/06. Shader/Volume 1.asset.meta
+>>>>>>>> b3350ef (다함ㅋ):Assets/06. Shader/Volume 1.asset.meta
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 
