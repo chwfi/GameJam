@@ -6384,7 +6384,7 @@ MonoBehaviour:
   GameOverScreen: {fileID: 111323894}
   Squares: {fileID: 595073560}
   BGM: {fileID: 1789196817}
-  endTime: 102
+  endTime: 100
   startTime: 0
   percent: {fileID: 1900829349}
   neareastEnemy: {fileID: 0}
@@ -6594,7 +6594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_Loading: {fileID: 1900829349}
-  time_loading: 102
+  time_loading: 100
 --- !u!114 &259627334683071907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6643,7 +6643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ae4c03c103f194c8e212bd0183f171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endTime: 102
+  endTime: 100
 --- !u!1 &4936590468999287364
 GameObject:
   m_ObjectHideFlags: 0
