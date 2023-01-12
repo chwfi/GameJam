@@ -355,7 +355,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361280714}
-  m_LocalRotation: {x: 0.31439325, y: -0.012487351, z: 0.004136042, w: 0.9492017}
+  m_LocalRotation: {x: 0.31439322, y: -0.012487309, z: 0.0041360287, w: 0.9492017}
   m_LocalPosition: {x: 0.14142141, y: 4, z: -5.374011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -900,7 +900,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.31439325, y: -0.012487351, z: 0.004136042, w: 0.9492017}
+  m_LocalRotation: {x: 0.31439322, y: -0.012487309, z: 0.0041360287, w: 0.9492017}
   m_LocalPosition: {x: 0.14142141, y: 4, z: -5.374011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6297,7 +6297,7 @@ MonoBehaviour:
   GameOverScreen: {fileID: 36423184}
   Squares: {fileID: 595073560}
   BGM: {fileID: 1789196817}
-  endTime: 102
+  endTime: 100
   startTime: 0
   neareastEnemy: {fileID: 0}
 --- !u!82 &1789196817
@@ -6506,7 +6506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_Loading: {fileID: 1900829349}
-  time_loading: 102
+  time_loading: 100
 --- !u!114 &259627334683071907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6555,7 +6555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ae4c03c103f194c8e212bd0183f171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endTime: 102
+  endTime: 100
 --- !u!1 &4936590468999287364
 GameObject:
   m_ObjectHideFlags: 0
