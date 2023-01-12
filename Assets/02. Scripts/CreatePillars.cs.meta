@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/02. Scripts/CreatePillars.cs.meta
 guid: d296511ad247f3a42ad61ed2f02fa038
+========
+guid: 3c6c4ed57a1f3344c9ba706361406864
+>>>>>>>> fa280b0 (다함ㅋ):Assets/02. Scripts/StageManager.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
