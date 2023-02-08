@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/01. Scenes/Stage01.meta
 guid: 6dd5ae99dfba9924b9f87e6dece87a7d
 folderAsset: yes
 DefaultImporter:
+========
+guid: 501cf09bbef5a174d90f367f17929f94
+PrefabImporter:
+>>>>>>>> 90fba4f (d):Assets/CM vcam1.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
