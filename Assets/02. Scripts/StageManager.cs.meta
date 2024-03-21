@@ -1,9 +1,9 @@
 fileFormatVersion: 2
 <<<<<<<< HEAD:Assets/02. Scripts/Tutorial.cs.meta
-guid: eeb98f2d8cf733b4bb59719bb49853d8
+guid: b8902f537af8c6440a345c4c5c6d97e0
 ========
 guid: 3c6c4ed57a1f3344c9ba706361406864
->>>>>>>> fa280b0 (다함ㅋ):Assets/02. Scripts/StageManager.cs.meta
+>>>>>>>> Wonseok:Assets/02. Scripts/StageManager.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

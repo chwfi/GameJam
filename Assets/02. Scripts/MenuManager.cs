@@ -29,31 +29,31 @@ public class MenuManager : MonoBehaviour
 
     public void ClickMainMenu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     public void MoveStage01()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(5);
     }
 
     public void MoveStage02()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void MoveStage03()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 
     public void MoveStage04()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 
     public void MoveStage05()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(4);
     }
 }

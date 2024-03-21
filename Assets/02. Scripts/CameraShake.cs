@@ -57,8 +57,8 @@ public class CameraShake : MonoBehaviour
 
         if (canShake)
         {
-            ShakeAmplitude = 1.2f;
-            ShakeFrequency = 1.5f;
+            ShakeAmplitude = 2f;
+            ShakeFrequency = 2.25f;
             ShakeElapsedTime = ShakeDuration;
         }
     }
