@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 703cc54a7f867ae44a269b766f456951
+<<<<<<<< HEAD:Assets/01. Scenes/Tutorial.unity.meta
+guid: 0f4eba16ff5741944b170247eb9ffed4
+========
+guid: 9f30329e76fee2645ab195432b83c5d9
+>>>>>>>> Wonseok:Assets/01. Scenes/Start.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
