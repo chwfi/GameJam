@@ -10,3 +10,5 @@
 실수로 방학 이후에 개선하여 작업한 것들을 discard 모두 해버려서 지금 깃허브 목록은 게임잼 당시 버전 목록들입니다 ㅜ
 
 상세한 포트폴리오 링크 -> https://wonseok1112.tistory.com/12
+
+![스크린샷 2023-03-23 193845](https://github.com/chwfi/Whale_Game/assets/98933635/9b274f4e-8b3f-479f-8cb5-8a42469107ed)
